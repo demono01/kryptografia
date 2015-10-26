@@ -2,15 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
-namespace kryptografia
+namespace Kryptografia
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("test");
+            startZadanie1();
+        }
+
+        static void startZadanie1()
+        {
+            Zadanie1 zadanie1 = new Zadanie1();
+            zadanie1.run("208787");
         }
     }
 }
